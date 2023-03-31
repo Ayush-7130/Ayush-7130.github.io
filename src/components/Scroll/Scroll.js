@@ -1,3 +1,4 @@
+import React from 'react';
 import react, { useState } from 'react'
 import './scroll.css'
 import { AiOutlineHome } from 'react-icons/ai'
