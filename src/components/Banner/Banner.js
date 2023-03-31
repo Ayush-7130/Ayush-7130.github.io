@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../../assets/img/header-img.png";
+import headerImg from "../../assets/img/header-img.jpg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import CV from '../../assets/CV/Resume.pdf'
 import 'animate.css';
