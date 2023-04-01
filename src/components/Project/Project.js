@@ -1,6 +1,10 @@
 import React from 'react'
 import './project.css'
 
+import P1_Back from '../../assets/img/textUtils.png';
+import P2_Back from '../../assets/img/newsApp.png';
+import P3_Back from '../../assets/img/portfolio_front.png';
+
 const Project = () => {
     return (
         <section id='project'>
@@ -10,7 +14,7 @@ const Project = () => {
             <div className='container project_container'>
                 <div className='project_card'>
                     <div className='project_img'>
-
+                        <img src={P1_Back} alt='TextUtils'></img>
                     </div>
                     <h3>TextUtils</h3>
                     <a href='https://github.com/Ayush-7130/TextUtils' className='btn-project'>GitHub</a>
@@ -18,18 +22,18 @@ const Project = () => {
 
                 <div className='project_card'>
                     <div className='project_img'>
-                        
+                        <img src={P2_Back} alt='NewsApp'></img>
                     </div>
-                    <h3>Portfolio</h3>
-                    <a href='https://github.com/Ayush-7130/Ayush-7130.github.io' className='btn-project'>GitHub</a>
+                    <h3>NewsApp</h3>
+                    <a href='link' className='btn-project'>GitHub</a>
                 </div>
 
                 <div className='project_card'>
                     <div className='project_img'>
-
+                        <img src={P3_Back} alt='Portfolio'></img>
                     </div>
-                    <h3>PROJECT TITLE</h3>
-                    <a href='link' className='btn-project'>GitHub</a>
+                    <h3>Portfolio</h3>
+                    <a href='https://github.com/Ayush-7130/Ayush-7130.github.io' className='btn-project'>GitHub</a>
                 </div>
             </div>
         </section>

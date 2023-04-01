@@ -40,12 +40,13 @@
 
 .project_card>h3 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
     color: var(--color-primary);
 }
 
 .project_img{
-    border-radius: 1.5rem;
+    border-radius: 0.5rem;
     overflow:hidden;
 }
 

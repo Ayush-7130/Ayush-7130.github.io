@@ -162,3 +162,9 @@
         margin-left: 2.5rem;
     }
 }
+
+@media screen and (max-width : 1200px) {
+    h1 {
+        font-size: 1rem;
+    }
+}
