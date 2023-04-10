@@ -72,7 +72,8 @@
 
 .banner img {
     /* animation: updown 3s linear infinite; */
-    width: 70%;
+    /* width: 70%; */
+    padding-top: 2rem;
 }
 
 .a .btn {
@@ -123,7 +124,6 @@
 
 .banner_column1{
     width: 100%;
-    margin-left: 8rem;
 }
 
 @keyframes updown {
@@ -156,10 +156,6 @@
 
     .banner{
         padding-bottom: 1rem;
-    }
-
-    .banner_column1{
-        margin-left: 2.5rem;
     }
 }
 

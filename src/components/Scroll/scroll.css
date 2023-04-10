@@ -47,3 +47,10 @@
     background: rgba(0, 0, 0, 0.7);
     filter:invert(1) contrast(86%);
 }
+
+@media screen and (max-width : 280px) {
+    .scroll-nav{
+        padding: 0.2rem 0.4rem;
+        margin-left: -1rem;
+    }
+}
