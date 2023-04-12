@@ -61,7 +61,7 @@ export const Banner = () => {
                                     <div>
                                         <h2>{`Hi! I'm `} <h1>Ayush Kumar</h1> <span className="txt-rotate" dataPeriod="500" data-rotate='[ "Web Developer", "Web Designer"]'><span className="fixd wrap">{text}</span></span></h2>
                                     </div>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <p>Passionate about software development, project-based experience in full stack web development with strain over MERN stack. Primarily looking for his SDE and full stack developer internship position for summer 2023. I wish to employ my skills efficiently to become an asset to my employer while gaining true experience in real-time development.</p>
                                     <a href={CV} download>
                                         <button>Download CV <ArrowRightCircle size={25} /></button>
                                     </a>
