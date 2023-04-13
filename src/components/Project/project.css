@@ -45,9 +45,43 @@
     color: var(--color-primary);
 }
 
-.project_img{
+.project_img {
     border-radius: 0.5rem;
-    overflow:hidden;
+    /* overflow: hidden; */
+}
+
+.project_card {
+    overflow: hidden;
+}
+
+.img_card_body {
+    align-items: center;
+    /* width: 89.5%; */
+    /* height: 55%; */
+    width: 100%;
+    height: 65%;
+    /* top: 1.3rem; */
+    top: -100%;
+    right: 0;
+    position: absolute;
+    /* background-color: #ffffff; */
+    background-color: var(--color-bg);
+    background-image: url('../../assets/img/bg-texture.png');
+
+    border-radius: 1.8rem 1.8rem 0 0;
+    color: rgb(255, 255, 255);
+    padding-top: 0.7rem;
+    
+    transition: 0.4s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+}
+
+.project_img:hover .img_card_body {
+    top: 0;
+    z-index: 1;
 }
 
 .btn-project{

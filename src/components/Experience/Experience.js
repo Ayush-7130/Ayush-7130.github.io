@@ -1,15 +1,21 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './experience.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { BsFillPatchCheckFill } from 'react-icons/bs';
 
 const Experience = () => { 
+    useEffect(() => {
+        AOS.init({duration: 400});
+    }, []);
+
     return (
         <section id='experience'>
             <h5>What Skills I Have</h5>
             <h2>My Skills</h2>
 
             <div className='container experience_container'>
-                <div className='experience_card'>
+                <div className='experience_card' data-aos="fade-right">
                     <h3> Tech Stack </h3>
                     <div className='experience_content'>
                         <article className='experience_details'><BsFillPatchCheckFill className='experience_icon' />
@@ -34,7 +40,7 @@ const Experience = () => {
                         </article>
                     </div>
                 </div>
-                <div className='experience_card'>
+                <div className='experience_card' data-aos="fade-left">
                     <h3> CS Core </h3>
                     <div className='experience_content'>
                         <article className='experience_details'><BsFillPatchCheckFill className='experience_icon' />
@@ -59,7 +65,7 @@ const Experience = () => {
                         </article>
                     </div>
                 </div>
-                <div className='experience_card'>
+                <div className='experience_card' data-aos="fade-right">
                     <h3> Frontend Development </h3>
                     <div className='experience_content'>
                         <article className='experience_details'><BsFillPatchCheckFill className='experience_icon' />
@@ -84,7 +90,7 @@ const Experience = () => {
                         </article>
                     </div>
                 </div>
-                <div className='experience_card'>
+                <div className='experience_card' data-aos="fade-left">
                     <h3> Backend Development </h3>
                     <div className='experience_content'>
                         <article className='experience_details'><BsFillPatchCheckFill className='experience_icon' />

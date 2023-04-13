@@ -1,7 +1,7 @@
 import React from 'react';
 import './contact.css';
 import { AiOutlineMail } from 'react-icons/ai';
-import { AiOutlineFacebook } from 'react-icons/ai';
+import { AiOutlineLinkedin } from 'react-icons/ai';
 import { AiOutlineWhatsApp } from 'react-icons/ai';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
@@ -37,10 +37,10 @@ const Contact = () => {
                     </div>
 
                     <div className='contact_option'>
-                        <AiOutlineFacebook className='contact_icon' />
-                        <h4>FaceBook</h4>
-                        <h5>Ayushkr7130@gmail.com</h5>
-                        <a href='https://www.facebook.com/profile.php?id=100072741618248'>Send Message</a>
+                        <AiOutlineLinkedin className='contact_icon' />
+                        <h4>linkedIn</h4>
+                        <h5>Ayush Kumar</h5>
+                        <a href="https://www.linkedin.com/in/ayush--kumar--/">Send Message</a>
                     </div>
 
                     <div className='contact_option'>
