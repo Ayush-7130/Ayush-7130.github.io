@@ -22,7 +22,7 @@ const Project = () => {
                     <div className='project_img'>
                         <img src={P1_Back} alt='TextUtils'></img>
                         <div className='img_card_body'>
-                            <p>This is a notebook application that has inbuilt login logout, user authentication feature and cloud-based file storage.</p>
+                            <p>TextUtils is a collection of useful utilities for manipulating String objects.</p>
                         </div>
                     </div>
                     <h3>TextUtils</h3>
@@ -44,7 +44,7 @@ const Project = () => {
                     <div className='project_img'>
                         <img src={P3_Back} alt='Portfolio'></img>
                         <div className='img_card_body'>
-                            <p>This is a notebook application that has inbuilt login logout, user authentication feature and cloud-based file storage.</p>
+                            <p>Crafted a sleek and modern personal portfolio using React, showcasing my skills and accomplishments with engaging design and effortless navigation.</p>
                         </div>
                     </div>
                     <h3>Portfolio</h3>
