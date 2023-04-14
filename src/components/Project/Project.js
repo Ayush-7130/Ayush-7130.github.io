@@ -9,7 +9,7 @@ import P3_Back from '../../assets/img/portfolio_front.png';
 
 const Project = () => {
     useEffect(() => {
-        AOS.init({duration: 1000});
+        AOS.init({duration: 400});
     }, []);
 
     return (
