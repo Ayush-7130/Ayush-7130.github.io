@@ -135,6 +135,10 @@ textarea {
     h4 {
         font-size: 1rem;
     }
+
+    .btn_submit {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width : 770px) {
