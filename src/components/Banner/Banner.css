@@ -66,6 +66,10 @@
     line-height: 1;
 }
 
+.tagline {
+    pointer-events: none;
+}
+
 .banner button:hover svg {
     margin-left: 25px;
 }
