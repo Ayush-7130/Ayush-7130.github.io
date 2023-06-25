@@ -5,8 +5,7 @@ import { NavBar } from "./components/Navbar/NavBar";
 import { Banner } from './components/Banner/Banner';
 import { Scroll } from './components/Scroll/Scroll';
 import Experience from './components/Experience/Experience';
-// import Project from './components/Project/Project';
-import Project from './components/Project/Project1';
+import Project from './components/Project/Project';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
