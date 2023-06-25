@@ -5,8 +5,12 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
 import navIcon1 from '../../assets/img/nav-icon1.svg';
+
+// eslint-disable-next-line
 import navIcon2 from '../../assets/img/nav-icon2.svg';
+// eslint-disable-next-line
 import navIcon3 from '../../assets/img/nav-icon3.svg';
+
 import navIcon4 from '../../assets/img/nav-icon4.png';
 
 import { HashLink } from 'react-router-hash-link';
@@ -15,7 +19,8 @@ import {
 } from "react-router-dom";
 
 export const NavBar = () => {
-
+  
+  // eslint-disable-next-line
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
@@ -33,6 +38,7 @@ export const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [])
 
+  // eslint-disable-next-line
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   }

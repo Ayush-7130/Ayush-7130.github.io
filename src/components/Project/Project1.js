@@ -41,7 +41,7 @@ const Project = () => {
                         <div class="flip-card-back">
                             <h1>NewsApp</h1>
                             <p>Completely functional news updates app that fetches trending news from an API with React based Frontend Architecture.</p>
-                            <a href='https://github.com/Ayush-7130/TextUtils' className='btn-project'>GitHub</a>
+                            <a href='https://github.com/Ayush-7130/NewsApp' className='btn-project'>GitHub</a>
                         </div>
                     </div>
                 </div>
