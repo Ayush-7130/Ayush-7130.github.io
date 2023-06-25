@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import P1_Back from '../../assets/img/textUtils.png';
 import P2_Back from '../../assets/img/newsApp.png';
 import P3_Back from '../../assets/img/portfolio_front.png';
+import P4_Back from '../../assets/img/inotepad.png';
 
 const Project = () => {
     useEffect(() => {
@@ -18,6 +19,20 @@ const Project = () => {
             <h2>My Projects</h2>
 
             <div className='container project_container'>
+                <div className='project_card' data-aos="fade-up">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src={P4_Back} alt='TextUtils'></img>
+                            <h3>iNotePad</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>iNotePad</h1>
+                            <p>iNotePad is a note-taking web app where users can create accounts and take notes.</p>
+                            <a href='https://github.com/Ayush-7130/iNotePad' className='btn-project'>GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div className='project_card' data-aos="fade-up">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">

@@ -13,12 +13,11 @@
 }
 
 #contact {
-    padding-top: 6rem;
+    padding-top: 3rem;
     text-align: center;
 }
 
 .contact_container {
-    padding-top: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
