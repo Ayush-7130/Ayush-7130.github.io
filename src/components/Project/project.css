@@ -13,22 +13,25 @@
 }
 
 #project {
-    padding-top: 6rem;
+    padding-top: 8rem;
     text-align: center;
 }
 
 .project_container {
     padding-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10rem;
+    grid-row-gap: 0px;
     width: 100%;
-    height: 25rem;
+    /* for increase number of projects increase height */
+    height: 60rem;
     perspective: 800px;
 }
 
 .flip-card-inner {
-    height: 80%;
+    /* for inside card content height */
+    height: 70%;
     width: 100%;
     position: relative;
     transition: transform 1000ms;

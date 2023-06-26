@@ -3,7 +3,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-size: 0.4rem;
-    margin-top: 7rem;
+    margin-top: 4rem;
 }
 
 .footer_social {

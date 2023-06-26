@@ -15,7 +15,6 @@ const Project = () => {
 
     return (
         <section id='project'>
-            <h5>My Recent Work</h5>
             <h2>My Projects</h2>
 
             <div className='container project_container'>
