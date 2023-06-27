@@ -146,6 +146,10 @@ textarea {
         grid-template-columns: 1fr;
     }
 
+    #contact {
+        padding-top: 5rem;
+    }
+
     .contact_options {
         width: 100%;
         padding: 1rem 1rem;

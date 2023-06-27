@@ -101,7 +101,8 @@
     }
 
     #project{
-        padding-bottom: 1rem;
+        padding-top: 5rem;
+        padding-bottom: 0rem;
         margin-top: 2rem;
     }
 
@@ -118,6 +119,7 @@
     .flip-card-front {
         gap: 2rem;
     }
+
 }
 
 @media screen and (max-width : 800px) {
@@ -129,12 +131,17 @@
 @media screen and (max-width : 770px) {
     .project_container {
         gap: 0;
+        padding-top: 0rem;
         grid-template-columns: 1fr;
         height: 80rem;
     }
 
     .flip-card-inner {
         height: 120%;
+    }
+
+    #project {
+        padding-top: 2rem;
     }
 
     .project_container>div {
