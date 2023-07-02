@@ -7,6 +7,11 @@
   padding: 5px;
 }
 
+.Nav-Container {
+  max-width: 100%;
+  width: 88% !important;
+}
+
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -184,31 +189,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 @media screen and (max-width : 1200px) {
-  .logo>h1 {
-    font-size: 1.5rem;
+  .navbar-brand>h1 {
+    font-size: 2.5rem !important;
   }
 }
 
 @media screen and (max-width : 1024px) {
-  .logo>h1 {
-    padding: 1rem;
-  }
-}
-
-@media screen and (max-width : 1000px) {
-  .logo>h1 {
-    font-size: 1.2rem;
+  .navbar-brand>h1 {
+    font-size: 2rem !important;
   }
 }
 
 @media screen and (max-width : 800px) {
-  .logo>h1 {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width : 600px) {
-  .logo>h1 {
-    font-size: 0.8rem;
+  .navbar-brand>h1 {
+    font-size: 1.5rem !important;
   }
 }

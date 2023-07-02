@@ -115,7 +115,7 @@
     }
 }
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 770px) {
     .experience_container {
         gap: 1rem;
         grid-template-columns: 1fr;

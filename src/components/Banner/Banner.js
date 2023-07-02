@@ -60,7 +60,7 @@ export const Banner = () => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className="tagline">Welcome to my Portfolio</span>
-                                    <div>
+                                    <div className='Banner-h1'>
                                         <h2>{`Hi! I'm `} <h1>Ayush Kumar</h1> <span className="txt-rotate" dataPeriod="500" data-rotate='[ "Web Developer", "Web Designer"]'><span className="fixd wrap">{text}</span></span></h2>
                                     </div>
                                     <p>Passionate about software development, project-based experience in full stack web development with strain over MERN stack. Primarily looking for his SDE and full stack developer internship position for summer 2023. I wish to employ my skills efficiently to become an asset to my employer while gaining true experience in real-time development.</p>
@@ -71,11 +71,11 @@ export const Banner = () => {
                         </TrackVisibility>
                     </div>
 
-                    <div className='banner_column1'>
+                    {/* <div className='banner_column1'>
                         <div className="banner_img">
                             <img src={headerImg} alt="Header Img" />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

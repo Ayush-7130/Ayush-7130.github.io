@@ -122,28 +122,26 @@
 
 }
 
-@media screen and (max-width : 800px) {
+@media screen and (max-width : 770px) {
     h4{
         font-size: 1rem;
     }
-}
 
-@media screen and (max-width : 770px) {
     .project_container {
         gap: 0;
         padding-top: 0rem;
         grid-template-columns: 1fr;
-        height: 80rem;
+        height: 90rem;
     }
 
     .flip-card-inner {
         height: 120%;
     }
-
+    
     #project {
         padding-top: 2rem;
     }
-
+    
     .project_container>div {
         width: 100%;
         padding: 2rem 1rem;
