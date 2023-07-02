@@ -136,6 +136,43 @@ p.danger {
   color: var(--color-bg);
 }
 
+
+@media screen and (min-width : 1400px) {
+  .container {
+    max-width: 1450px !important;
+  }
+}
+
+@media screen and (min-width : 1200px) and (max-width : 1400px) {
+  .container {
+    max-width: 1320px !important;
+  }
+}
+
+@media screen and (min-width : 1000px) and (max-width : 1200px) {
+  .container {
+    max-width: 1150px !important;
+  }
+}
+
+@media screen and (min-width : 800px) and (max-width : 1000px) {
+  .container {
+    max-width: 1050px !important;
+  }
+}
+
+@media screen and (min-width : 600px) and (max-width : 800px) {
+  .container {
+    max-width: 780px !important;
+  }
+}
+
+@media screen and (min-width : 576px) and (max-width : 600px) {
+  .container {
+    max-width: 590px !important;
+  }
+}
+
 @media screen and (max-width : 1024px) {
   .container {
     width: var(--container-width-lg);

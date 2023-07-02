@@ -25,7 +25,7 @@
     grid-row-gap: 0px;
     width: 100%;
     /* for increase number of projects increase height */
-    height: 60rem;
+    height: 75rem;
     perspective: 800px;
 }
 
@@ -78,7 +78,6 @@
     cursor: default;
 }
 
-
 @media screen and (max-width : 1200px) {
     h3{
         font-size: 1.5rem;
@@ -100,12 +99,16 @@
         margin: 0 auto;
     }
 
+    .project_container{
+        height: 60rem;
+    }
+    
     #project{
         padding-top: 5rem;
         padding-bottom: 0rem;
         margin-top: 2rem;
     }
-
+    
     .flip-card-back {
         gap: 3rem;
     }
@@ -116,10 +119,19 @@
         font-size: 1.2rem;
     }
 
+    .project_container{
+        height: 55rem;
+    }
+
     .flip-card-front {
         gap: 2rem;
     }
+}
 
+@media screen and (max-width : 900px) {
+    .project_container{
+        height: 50rem;
+    }
 }
 
 @media screen and (max-width : 770px) {
@@ -128,10 +140,10 @@
     }
 
     .project_container {
-        gap: 0;
+        grid-gap: 1rem;
         padding-top: 0rem;
         grid-template-columns: 1fr;
-        height: 90rem;
+        height: 105rem;
     }
 
     .flip-card-inner {
