@@ -161,9 +161,22 @@
     }
 }
 
+@media screen and (max-width : 650px) {
+    .project_container {
+        height: 85rem;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .project_container {
+        height: 78rem;
+    }
+}
+
 @media screen and (max-width : 360px) {
     .project_container {
         grid-template-columns: 1fr;
+        height: 68rem;
     }
 
     .project_container>div {
