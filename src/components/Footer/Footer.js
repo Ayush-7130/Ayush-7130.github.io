@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <footer id='footer'>
       <div className='footer_social'>
-        <a href="https://www.facebook.com/profile.php?id=100072741618248"><img src={navIcon2} alt="" /></a>
-        <a href="https://www.instagram.com/ayush__reigns/"><img src={navIcon3} alt="" /></a>
+        <a href="https://www.facebook.com/profile.php?id=100072741618248" target='_blank' rel="noopener noreferrer"><img src={navIcon2} alt="" /></a>
+        <a href="https://www.instagram.com/ayush__reigns/" target='_blank' rel="noopener noreferrer"><img src={navIcon3} alt="" /></a>
       </div>
       <div className='footer_copyright'>
         <small>&copy; Ayush Kumar. All Right Reserved</small>

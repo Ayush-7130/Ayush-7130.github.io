@@ -39,14 +39,14 @@ const Contact = () => {
                         <AiOutlineLinkedin className='contact_icon' />
                         <h4>linkedIn</h4>
                         <h5>Ayush Kumar</h5>
-                        <a href="https://www.linkedin.com/in/ayush--kumar--/">Send Message</a>
+                        <a href="https://www.linkedin.com/in/ayush--kumar--/" target='_blank' rel="noopener noreferrer">Send Message</a>
                     </div>
 
                     <div className='contact_option'>
                         <AiOutlineWhatsApp className='contact_icon' />
                         <h4>Whatsapp</h4>
                         <h5>+91 8875231058</h5>
-                        <a href='https://wa.me/918875231058'>Send Message</a>
+                        <a href='https://wa.me/918875231058' target='_blank' rel="noopener noreferrer">Send Message</a>
                     </div>
                 </div>
 

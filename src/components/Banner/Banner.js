@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from "react";
-import headerImg from "../../assets/img/header-img.jpg";
+// import headerImg from "../../assets/img/header-img.jpg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import CV from '../../assets/CV/Resume.pdf'
 import 'animate.css';
@@ -15,8 +15,8 @@ export const Banner = () => {
 
     // eslint-disable-next-line
     const [index, setIndex] = useState(1);
-    const toRotate = ["Web Developer", "Frontend Developer"];
-    const period = 1000;
+    const toRotate = ["Software Developer", "Full Stack Web Dev"];
+    const period = 400;
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -61,9 +61,9 @@ export const Banner = () => {
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className="tagline">Welcome to my Portfolio</span>
                                     <div className='Banner-h1'>
-                                        <h2>{`Hi! I'm `} <h1>Ayush Kumar</h1> <span className="txt-rotate" dataPeriod="500" data-rotate='[ "Web Developer", "Web Designer"]'><span className="fixd wrap">{text}</span></span></h2>
+                                        <h2>{`Hi! I'm `} <h1>Ayush Kumar</h1> <span className="txt-rotate" dataPeriod="400" data-rotate='["Software Developer", "Full Stack Web Dev"]'><span className="fixd wrap">{text}</span></span></h2>
                                     </div>
-                                    <p>Passionate about software development, project-based experience in full stack web development with strain over MERN stack. Primarily looking for his SDE and full stack developer internship position for summer 2023. I wish to employ my skills efficiently to become an asset to my employer while gaining true experience in real-time development.</p>
+                                    <p>Passionate about software development, project-based experience in full stack web development with strain over MERN stack. Primarily looking for his SDE and full stack developer internship position for summer 2024. I wish to employ my skills efficiently to become an asset to my employer while gaining true experience in real-time development.</p>
                                     <a href={CV} download>
                                         <button>Download CV <ArrowRightCircle size={25} /></button>
                                     </a>
