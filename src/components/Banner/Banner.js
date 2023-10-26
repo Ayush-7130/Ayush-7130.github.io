@@ -22,7 +22,7 @@ export const Banner = () => {
         let ticker = setInterval(() => {
             tick();
         }, delta);
-
+        
         return () => { clearInterval(ticker) };
     }, [text])
 
