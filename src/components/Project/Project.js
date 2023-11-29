@@ -66,12 +66,12 @@ const Project = () => {
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src={P6_Back} alt='Portfolio'></img>
-                            <h3>SISD-Processor</h3>
+                            <h3>SIMD-Processor</h3>
                         </div>
                         <div class="flip-card-back">
-                            <h1>SISD-Processor</h1>
-                            <p>This project aims to create a custom 32-bit DRAM-integrated SISD processor to enhance sequential instruction execution, improve memory access speed, and minimize latency by tailoring the DRAM system to the processor's requirements.</p>
-                        <a href='https://github.com/Ayush-7130/SISD-Processor' target='_blank' rel="noopener noreferrer" className='btn-project'>GitHub</a>
+                            <h1>SIMD-Processor</h1>
+                            <p>This project aims to create a custom 32-bit DRAM-integrated SIMD processor to enhance sequential instruction execution, improve memory access speed, and minimize latency by tailoring the DRAM system to the processor's requirements.</p>
+                        <a href='https://github.com/Ayush-7130/SIMD-Processor' target='_blank' rel="noopener noreferrer" className='btn-project'>GitHub</a>
                         </div>
                     </div>
                 </div>
