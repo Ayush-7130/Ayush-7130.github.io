@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import { siteConfig } from "@/lib/data";
 import "./globals.css";
 
 const inter = Inter({
@@ -15,11 +16,10 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ayush Kumar — Software Developer",
-  description:
-    "Full-stack software developer specializing in MERN stack. Building performant, user-friendly web applications.",
+  title: siteConfig.title,
+  description: siteConfig.description,
   keywords: [
-    "Ayush Kumar",
+    siteConfig.name,
     "Software Developer",
     "Full Stack",
     "MERN",
@@ -27,11 +27,10 @@ export const metadata: Metadata = {
     "Next.js",
     "Portfolio",
   ],
-  authors: [{ name: "Ayush Kumar" }],
+  authors: [{ name: siteConfig.name }],
   openGraph: {
-    title: "Ayush Kumar — Software Developer",
-    description:
-      "Full-stack software developer specializing in MERN stack.",
+    title: siteConfig.title,
+    description: siteConfig.description,
     type: "website",
   },
 };
