@@ -1,21 +1,24 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Home, User2, Wrench, FolderOpen, Mail } from "lucide-react";
+import { Home, User2, Wrench, FolderOpen, Mail, Briefcase } from "lucide-react";
+import { navLinks } from "@/lib/data";
+import type { LucideIcon } from "lucide-react";
 
-const navItems = [
-  { href: "#home",     icon: Home,       label: "Home"     },
-  { href: "#about",    icon: User2,      label: "About"    },
-  { href: "#skills",   icon: Wrench,     label: "Skills"   },
-  { href: "#projects", icon: FolderOpen, label: "Projects" },
-  { href: "#contact",  icon: Mail,       label: "Contact"  },
-];
+const iconMap: Record<string, LucideIcon> = {
+  Home,
+  About: User2,
+  Experience: Briefcase,
+  Skills: Wrench,
+  Projects: FolderOpen,
+  Contact: Mail,
+};
 
 export default function MobileNav() {
   const [active, setActive] = useState("#home");
 
   useEffect(() => {
-    const sectionIds = navItems.map((n) => n.href.slice(1));
+    const sectionIds = navLinks.map((n) => n.href.slice(1));
 
     const observers = sectionIds.map((id) => {
       const el = document.getElementById(id);
@@ -41,8 +44,9 @@ export default function MobileNav() {
 
   return (
     <nav className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-1 px-4 py-3 rounded-full border border-purple-500/20 bg-black/40 backdrop-blur-xl shadow-lg shadow-black/40">
-      {navItems.map(({ href, icon: Icon, label }) => {
+      {navLinks.map(({ href, label }) => {
         const isActive = active === href;
+        const Icon = iconMap[label];
         return (
           <a
             key={href}
@@ -55,7 +59,7 @@ export default function MobileNav() {
                 : "text-slate-400 hover:text-white hover:bg-white/10"
             }`}
           >
-            <Icon size={18} />
+            {Icon && <Icon size={18} />}
           </a>
         );
       })}

@@ -64,13 +64,13 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-24 sm:py-32">
+    <section id="contact" className="relative py-20 sm:py-24 md:py-32">
       <div className="glow -bottom-40 left-20" />
 
       <div className="mx-auto max-w-5xl px-6">
         <SectionHeading label="Reach out" title="Contact Me" />
 
-        <div className="mt-12 grid gap-12 lg:grid-cols-5">
+        <div className="mt-8 grid gap-8 sm:mt-12 sm:gap-12 lg:grid-cols-5">
           {/* Info cards */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}

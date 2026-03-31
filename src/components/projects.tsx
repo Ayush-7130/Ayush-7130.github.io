@@ -24,13 +24,13 @@ const cardVariants = {
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-24 sm:py-32">
+    <section id="projects" className="relative py-20 sm:py-24 md:py-32">
       <div className="glow top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
 
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading label="What I've built" title="Projects" />
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projectsData.map((project, idx) => (
             <motion.article
               key={project.title}
@@ -69,9 +69,9 @@ export default function Projects() {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-sm text-accent-light hover:text-foreground transition-colors"
+                  className="inline-flex items-center gap-1.5 text-xs text-accent-light hover:text-foreground transition-colors sm:text-sm"
                 >
-                  <GithubIcon className="h-4 w-4" />
+                  <GithubIcon className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                   Code
                 </a>
                 {project.live && (
@@ -79,9 +79,9 @@ export default function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm text-accent-light hover:text-foreground transition-colors"
+                    className="inline-flex items-center gap-1.5 text-xs text-accent-light hover:text-foreground transition-colors sm:text-sm"
                   >
-                    <ExternalLink className="h-4 w-4" />
+                    <ExternalLink className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                     Live
                   </a>
                 )}

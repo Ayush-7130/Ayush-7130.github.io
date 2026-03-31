@@ -19,22 +19,34 @@ export const siteConfig = {
   },
 };
 
+export const navLinks = [
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
+  { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
+] as const;
+
 export const heroData = {
+  badge: "Welcome to my Portfolio",
   greeting: "Hi! I'm",
   name: "Ayush Kumar",
-  roles: ["Software Developer", "Full Stack Web Dev"],
-  bio: "Passionate about software development with project-based experience in full-stack web development, focusing on the MERN stack. I build performant, user-friendly applications and continuously seek to grow as a developer.",
+  roles: ["SDE-1", "Full Stack Engineer"] as const,
+  bio: "Associate Software Developer at Sapiens, building scalable internal products using React, Node.js, and Next.js. I focus on performance, clean architecture, and delivering production-ready features.",
+  resumeUrl: "/Resume.pdf",
 };
 
 export const aboutData = {
   paragraphs: [
-    "I'm a software developer focused on building production-ready, full-stack web applications. I recently shipped Spend-GW-Tracker — a multi-group expense tracking platform built with Next.js 15, MongoDB, TypeScript, and Bootstrap 5, featuring JWT authentication, real-time analytics, smart expense splitting, and a 90+ Lighthouse score.",
-    "My primary stack is the MERN ecosystem, and I enjoy solving problems across the entire stack — from schema design and API architecture to responsive UI and performance optimisation. I'm also active in competitive programming and enjoy exploring system design and 3D graphics on the web.",
-  ],
+    "I'm an Associate Software Developer at Sapiens, working on internal product applications where I build scalable, maintainable features across both frontend and backend. My work involves designing responsive UIs, optimizing APIs, and collaborating in agile teams to deliver high-quality software.",
+    "I specialize in full-stack development with the MERN and Next.js ecosystem, focusing on clean architecture, performance, and user experience. I enjoy solving real-world problems and owning features end-to-end.",
+"Previously, I interned at IIT Bhubaneswar, building an AI/ML-based animal health monitoring system and working on geospatial analysis. I’ve solved 1100+ DSA problems and explore system design and advanced web experiences.",
+],
   highlights: [
-    { label: "Focus", value: "Full-Stack Web Development" },
-    { label: "Stack", value: "MERN · Next.js · Tailwind" },
-    { label: "Interests", value: "System Design · 3D Web · DSA" },
+    { label: "Current Role", value: "SDE @ Sapiens" },
+    { label: "Stack", value: "React · Next.js · Node.js · TypeScript" },
+    { label: "Achievements", value: "1100+ DSA · Top 5% Adobe Hackathon" },
   ],
 };
 
@@ -46,6 +58,42 @@ export interface SkillCategory {
   title: string;
   skills: Skill[];
 }
+
+export interface Experience {
+  title: string;
+  company: string;
+  duration: string;
+  location: string;
+  description: string[];
+  tech: string[];
+}
+
+export const experienceData: Experience[] = [
+  {
+    title: "Associate Software Developer",
+    company: "Sapiens",
+    duration: "Jun 2025 – Present",
+    location: "Bengaluru, India",
+    description: [
+      "Developing scalable internal product applications using React.js and Node.js.",
+      "Building responsive UI components and improving overall user experience.",
+      "Collaborating in agile teams to deliver production-ready features.",
+      "Optimizing APIs for better performance and reliability.",
+    ],
+    tech: ["React.js", "Node.js", "TypeScript", "Next.js", "Git"],
+  },
+  {
+    title: "Software Developer Intern",
+    company: "AHRC, IIT Bhubaneswar",
+    duration: "May 2024 – Aug 2024",
+    location: "Bhubaneswar, India",
+    description: [
+      "Worked on an AI/ML-based system for animal health monitoring.",
+      "Performed basic geospatial data analysis.",
+    ],
+    tech: ["Python", "Machine Learning"],
+  },
+];
 
 export const skillsData: SkillCategory[] = [
   {

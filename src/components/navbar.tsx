@@ -3,15 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { siteConfig } from "@/lib/data";
-
-const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
-];
+import { siteConfig, navLinks } from "@/lib/data";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -49,6 +41,7 @@ export default function Navbar() {
               <a
                 href={link.href}
                 className="text-sm text-muted-fg hover:text-foreground transition-colors duration-200"
+                aria-label={link.label}
               >
                 {link.label}
               </a>

@@ -16,13 +16,13 @@ export default function SectionHeading({ label, title }: SectionHeadingProps) {
       transition={{ duration: 0.5 }}
       className="text-center"
     >
-      <p className="text-xs uppercase tracking-widest text-accent-light mb-2">
+      <p className="text-[11px] uppercase tracking-widest text-accent-light mb-2 sm:text-xs">
         {label}
       </p>
-      <h2 className="text-3xl font-bold sm:text-4xl">
+      <h2 className="text-2xl font-bold sm:text-3xl md:text-4xl">
         <span className="text-gradient">{title}</span>
       </h2>
-      <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-accent to-accent-light" />
+      <div className="mx-auto mt-3 h-1 w-12 rounded-full bg-gradient-to-r from-accent to-accent-light sm:mt-4 sm:w-16" />
     </motion.div>
   );
 }

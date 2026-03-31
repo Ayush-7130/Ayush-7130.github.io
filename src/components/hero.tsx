@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowDown, ArrowRight } from "lucide-react";
 import dynamic from "next/dynamic";
+import { heroData } from "@/lib/data";
+import { useTypewriter } from "@/lib/utils";
 
 // ─── Lazy-load 3D canvas ───
 const Scene3D = dynamic(() => import("@/components/scene-3d"), {
@@ -33,25 +35,11 @@ const itemVariants = {
   },
 };
 
-const stats = [
-  { value: "12+", label: "Projects" },
-  { value: "5+", label: "Years Exp." },
-];
-
-// ─── Typewriter config ───
-const toRotate = ["Software Developer", "Full Stack Web Dev"];
-const TYPING_PERIOD = 400;
-
 // ─── Hero Component ───
 export default function Hero() {
   const [mounted, setMounted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-
-  // Typewriter state
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const text = useTypewriter(heroData.roles);
 
   useEffect(() => {
     setMounted(true);
@@ -60,34 +48,6 @@ export default function Hero() {
     window.addEventListener("resize", check);
     return () => window.removeEventListener("resize", check);
   }, []);
-
-  // Typewriter tick
-  useEffect(() => {
-    const ticker = setInterval(() => {
-      const i = loopNum % toRotate.length;
-      const fullText = toRotate[i];
-      const updated = isDeleting
-        ? fullText.substring(0, text.length - 1)
-        : fullText.substring(0, text.length + 1);
-
-      setText(updated);
-
-      if (isDeleting) {
-        setDelta((prev) => prev / 2);
-      }
-
-      if (!isDeleting && updated === fullText) {
-        setIsDeleting(true);
-        setDelta(TYPING_PERIOD);
-      } else if (isDeleting && updated === "") {
-        setIsDeleting(false);
-        setLoopNum((prev) => prev + 1);
-        setDelta(500);
-      }
-    }, delta);
-
-    return () => clearInterval(ticker);
-  }, [text, delta, isDeleting, loopNum]);
 
   return (
     <section
@@ -150,17 +110,17 @@ export default function Hero() {
               <motion.div variants={itemVariants}>
                 <span className="inline-flex items-center gap-2 rounded-full border border-indigo-500/20 bg-indigo-500/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-indigo-400">
                   <span className="h-1.5 w-1.5 rounded-full bg-indigo-400 animate-pulse" />
-                  Welcome to my Portfolio
+                  {heroData.badge}
                 </span>
               </motion.div>
 
               {/* Heading */}
               <motion.div variants={itemVariants}>
-                <h2 className="text-2xl font-medium text-slate-300 sm:text-3xl">
-                  {"Hi! I'm"}
+                <h2 className="text-2xl font-medium text-slate-300 sm:text-3xl" aria-label={heroData.greeting}>
+                  {heroData.greeting}
                 </h2>
-                <h1 className="text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl md:text-6xl xl:text-7xl mt-1">
-                  <span className="hero-gradient-text">Ayush Kumar</span>
+                <h1 className="text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl md:text-6xl xl:text-7xl mt-1" aria-label={heroData.name}>
+                  <span className="hero-gradient-text">{heroData.name}</span>
                 </h1>
               </motion.div>
 
@@ -178,10 +138,7 @@ export default function Hero() {
                 variants={itemVariants}
                 className="max-w-lg text-base leading-relaxed text-slate-500"
               >
-                Passionate about software development, with project-based
-                experience in full stack web development and a focus on the
-                MERN stack. I employ my skills efficiently to become an asset
-                while gaining true experience in real-time development.
+                {heroData.bio}
               </motion.p>
 
               {/* CTA Button */}
@@ -190,7 +147,7 @@ export default function Hero() {
                 className="flex flex-wrap items-center gap-4 pt-1"
               >
                 <a
-                  href="/Resume.pdf"
+                  href={heroData.resumeUrl}
                   className="hero-btn-primary group"
                   download
                 >
